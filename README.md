@@ -5,7 +5,7 @@
  1. 팀명 : Fito
  2. 프로젝트 아이템 : 비상장 주식회사의 장외주식거래/주주명부 관리 dApp
     - 핵심기능
-      - 토큰(=주식) 발행
+      - _토큰(=주식) 발행_
       - 비상장 주식회사 주주명부 조회
       - 비상장 주식회사 주주의 장외주식거래 내용 조회
       - 비상장 주식회사-주주간 장외주식거래(=유상증자)
@@ -20,7 +20,16 @@
       - Core : [go-ethereum](https://github.com/ethereum/go-ethereum)
  
 ## Team Meeting
- 
+
+#### 2018-11-09, 5th
+  - 중간발표 & 피드백
+  - KALEIDO-Truffle 연동 완료, Ganache-Truffle 환경 공유
+  - Solidity 스터디(계속)
+#### 2018-11-08, 4th
+  - 프로토타입 외형 설계 및 배포
+  - 서비스 구조 설계 및 Solidity 스터디(계속)
+  - 멘토링 & 피드백 반영
+  - [중간발표 준비 및 문서화 진행](https://docs.google.com/document/d/1EdmWTQI7Lh6pV84EyPcoDZrYv4G9eQUT37-lelq-Ho0/edit?usp=sharing)
 #### 2018-11-07, 3rd
   - 프로젝트 구현 대상 구체화
   - 프로젝트 사이트 on AWS : [https://fito.ga](https://fito.ga)
