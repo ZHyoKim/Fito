@@ -32,14 +32,13 @@
 
                 console.log('starting...');
                 //check if web3 Metamask/Mist auto-created Provider or not
-                // if (typeof web3 !== 'undefined') {
-                //     web3 = new Web3(web3.currentProvider);
-                // } else {
-                //     // set the provider you want from Web3.providers
-                //     // Not working.. https://github.com/ZHyoKim/Fito/issues/11
-                //     // var web3 = new Web3(new Web3.providers.HttpProvider('<kaleido-credential-endpoint>'));
-                // }
-                var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'));
+                if (typeof web3 !== 'undefined') {
+                    web3 = new Web3(web3.currentProvider);
+                } else {
+                    // set the provider you want from Web3.providers
+                    // Not working.. https://github.com/ZHyoKim/Fito/issues/11
+                    // var web3 = new Web3(new Web3.providers.HttpProvider('<kaleido-credential-endpoint>'));
+                }
     
                 if (web3.isConnected()) {
                     console.log("connected");
@@ -71,11 +70,7 @@
                 // // var contractAddress = FitoContract_build.networks[ Object.keys(FitoContract_build.networks)[0] ].address;
                 // // var FitoContract = web3.eth.contract(contractAbi).at(contractAddress);
                 // // // -----------------------------------------------------------------
-    
-                web3.eth.defaultAccount = web3.eth.accounts[1];
-            </script>
 
-            <script type="text/javascript">
                 function addShareholderListToTable() {
                     var my_tbody = document.getElementById('Tbody');
                     // console.log("my_tbody.childElementCount", my_tbody.childElementCount);

@@ -70,8 +70,6 @@
                 // // var FitoContract = web3.eth.contract(contractAbi).at(contractAddress);
                 // // // -----------------------------------------------------------------
 
-                web3.eth.defaultAccount = web3.eth.accounts[1];
-
                 function watchEventOfTradingDataAdded() {
                     var event = FitoContract.eventTradingDataAdded();
                     event.watch(function(error, result){
