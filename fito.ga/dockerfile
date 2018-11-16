@@ -7,8 +7,12 @@ WORKDIR /FitoDapp
 RUN apt-get update
 RUN apt-get install git-core -y
 RUN npm install
-RUN npm install -g ganache-cli
-RUN ganache-cli
-RUN npm run dev
+RUN npm install -g truffle ganache-cli lite-server
 
-EXPOSE [8545, 3000]
+CMD ["ganache-cli","-q"]
+CMD ["truffle build"]
+CMD ["truffle migrate"]
+CMD ["lite-server"]
+
+EXPOSE 8545
+EXPOSE 3000
