@@ -1,0 +1,14 @@
+FROM node:10.13.0-slim
+MAINTAINER tooget <tooget@gmailcom>
+
+COPY . /FitoDapp
+WORKDIR /FitoDapp
+
+RUN apt-get update
+RUN apt-get install git-core -y
+RUN npm install
+RUN npm install -g ganache-cli
+RUN ganache-cli
+RUN npm run dev
+
+EXPOSE [8545, 3000]
